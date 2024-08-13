@@ -1,5 +1,3 @@
-
-
 script ={
     "script-1"={
   status           = "ENABLED"

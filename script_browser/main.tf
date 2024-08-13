@@ -1,6 +1,6 @@
 data "local_file" "script_content" {
     for_each = var.script
-   filename = "${path.module}/../${each.value.file_path}"
+   filename = "${path.module}/../tfvars/script/${each.value.file_path}"
 }
 
 resource "newrelic_synthetics_script_monitor" "monitor" {
